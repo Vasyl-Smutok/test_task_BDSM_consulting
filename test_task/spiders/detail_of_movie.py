@@ -30,8 +30,3 @@ class DetailOfMovieSpider(scrapy.Spider):
             ).get(),
             "description": response.css(".b-post__description_text::text").get(),
         }
-
-
-def read_csv_pandas(csv_name):
-    data = pd.read_csv(csv_name)
-    print(data.head())

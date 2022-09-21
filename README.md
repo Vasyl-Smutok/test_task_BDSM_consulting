@@ -20,7 +20,7 @@ pip install -r requirements.txt
 * First way (Beautiful soup & Requests)
   * ```python bs4_requests/parse.py ```
 * Second way (Scrapy)
-  * ```scrapy crawl detail_of_movie -O movie.csv ```
+  * ```python test_task/result.py```
 
  **Hints:** default the page will be parsed:  https://rezka.ag/series/comedy/2040-kremnievaya-dolina-2014.html,  
             but you can easily change this by creating a variable in the virtual environment ```URL_TO_PARSE```
