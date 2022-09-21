@@ -7,8 +7,8 @@
 Python3 must be already installed
 
 ```shell 
-git clone https://github.com/Vasyl-Smutok/test-task-DataOx.git
-cd test-task-DataOx
+git clone https://github.com/Vasyl-Smutok/test_task_BDSM_consulting.git
+cd test_task_BDSM_consulting
 python3 -m venv venv
 source venv/bin/activate  # on macOS
 venv\Scripts\activate  # on Windows 
