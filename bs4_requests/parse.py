@@ -1,9 +1,9 @@
 import csv
+import os
 from dataclasses import dataclass, astuple
 import requests
 from bs4 import BeautifulSoup
 import pandas as pd
-
 
 MOVIE_OUTPUT_CSV_PATH = "detail_of_movie.csv"
 MOVIE_FIELDS = [
@@ -15,7 +15,10 @@ MOVIE_FIELDS = [
     "description",
 ]
 
-URL_TO_PARSE = "https://rezka.ag/series/comedy/2040-kremnievaya-dolina-2014.html"
+URL_TO_PARSE = os.environ.get(
+    "URL_TO_PARSE", "https://rezka.ag/series/comedy/2040-kremnievaya-dolina-2014.html"
+)
+
 HEADERS = {
     "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 "
     "Safari/537.36 "

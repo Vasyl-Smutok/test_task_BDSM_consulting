@@ -12,3 +12,5 @@ soupsieve==2.3.2.post1
 tomli==2.0.1
 urllib3==1.26.12
 pandas~=1.5.0
+Scrapy~=2.6.2
+itemadapter~=0.7.0
